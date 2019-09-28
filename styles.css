@@ -95,7 +95,20 @@ header .container {
     justify-content: center;
 }
 
-#buttons__left-arrow div{
+#buttons__left-arrow{
+    width: 20%;
+}
+
+.left-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-top: 20px;  
+}
+
+.right-logo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
