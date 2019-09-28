@@ -55,6 +55,7 @@ h1 {
 
 .logo-wrapper h2{
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #header__navigation-bar{
@@ -74,6 +75,7 @@ h1 {
     height: 100%;
     width: 30%;
     border-left: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #header__navigation-bar div img {
@@ -91,6 +93,15 @@ header .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#buttons__left-arrow div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-top: 20px;  
 }
 
 #banner .container{
@@ -123,10 +134,13 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Asap', sans-serif;
 }
 
 .white-text{
     color: white;
+    font-family: 'Asap', sans-serif;
+    letter-spacing: 1px;
 }
 
 #banner__content-text h3 {
@@ -154,6 +168,10 @@ span {
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
 }
 
 #icon_area__content-betterdesign{
@@ -201,6 +219,16 @@ span {
     justify-content: space-between;
     width: 50%;
     align-items: center;
+    width: 918px;
+    height: 130px;
+}
+
+h3{
+    font-size: 37px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
 }
 
 .section__layer-banner {
@@ -215,6 +243,11 @@ span {
     width: auto;
     height: auto;
     padding: 30px;
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+
 }
 
 .section__layer-banner div{
@@ -286,12 +319,23 @@ span {
 
 #black-box__content ul li {
     margin-bottom: 30px;
+    width: 352px;
+height: 45px;
+font-size: 22px;
+letter-spacing: 0px;
+color: #a9a9a7;
+font-family: "Open Sans";
+font-weight: 400;
 }
 
 .black-box__title h4{
     width: auto;
     height: auto;
     text-align: center;
+    letter-spacing: 0px;
+    color: #f5c506;
+    font-family: "PT Sans";
+    font-size: 43px;
 }
 
 #black-box__content{
