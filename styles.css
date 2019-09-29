@@ -56,6 +56,8 @@ h1 {
 .logo-wrapper h2{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 41px;
+    letter-spacing: 0px;
 }
 
 #header__navigation-bar{
@@ -64,7 +66,6 @@ h1 {
     background: #f5c506;
     width: 460px;
     height: 45px;
-    align-items: center;
     justify-content: center;
 }
 
@@ -74,8 +75,19 @@ h1 {
     justify-content: space-around;
     height: 100%;
     width: 30%;
-    border-left: 1px solid black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-bar{
+    border-left: 1px solid #050401;
+}
+
+.right-bar{
+    border-left: 1px solid #050401;
+}  
+
+#header__navigation-bar div:hover {
+    border-bottom: 3px solid black;
 }
 
 #header__navigation-bar div img {
@@ -99,13 +111,14 @@ header .container {
     width: 20%;
 }
 
-.left-logo{
+.left-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding-top: 20px;  
+    padding-top: 20px;
+    cursor: pointer;
 }
 
 .right-logo{
@@ -115,6 +128,7 @@ header .container {
     align-items: center;
     height: auto;
     padding-top: 20px;  
+    cursor: pointer;
 }
 
 #banner .container{
@@ -131,7 +145,7 @@ header .container {
 #banner__content__video{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 20%;
     align-items: center;
 }
@@ -185,6 +199,7 @@ span {
     font-size: 27px;
     letter-spacing: 0px;
     color: #000000;
+    box-shadow: 0px 1px 50px black;
 }
 
 #icon_area__content-betterdesign{
@@ -202,6 +217,11 @@ span {
     align-items: center;
     width: 30%;
     height: 100%;
+    border-left: 2px solid #d4d4d4;
+}
+
+.right-icon{
+    border-right: 2px solid #d4d4d4;
 }
 
 #icon_area__content-betterdesign a{
@@ -211,6 +231,11 @@ span {
     align-items: center;
     height: auto;
     padding-top: 20px;
+}
+
+#icon_area__content-betterdesign a:hover {
+    border-bottom: 3px solid #f5c505;
+    background: #f5c505;
 }
 
 #yellow-box{
@@ -249,7 +274,6 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     height: 240px;
-
 }
 
 .section__layer-banner p{
@@ -369,4 +393,143 @@ footer{
     flex-direction: row;
     justify-content: center;
     box-shadow: 0px -3px 10px black;
+    height: auto;
+    font-size: 29px;
+}
+
+/*************************************************** Adapted version ***************************************************/
+@media  only screen and (max-width:640px) {
+    #header-banner-wrapper{
+        height: 381px;
+        -moz-background-size: 100%; /* Firefox 3.6+ */
+        -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: 100%; /* Opera 9.6+ */
+        background-size: 100%;
+        width: 100%;
+        background-image: none;
+    }
+   
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 62px;
+    }
+ 
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 62px;
+    }
+
+    #header__logo-wrapper {  
+        background-image: url(./resources/mobile-black-header-layer.png);
+        width: 220px;
+        height: 60px;
+    }
+
+    #header__logo-wrapper img{
+        width: 50px;
+        height: 50px;
+    }
+    .logo-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-wrapper h2{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 19px;
+        letter-spacing: 0px;
+    }
+
+    #header__navigation-bar{
+        display: flex;
+        flex-direction: row;
+        background: #f5c506;
+        width: 420px;
+        height: 60px;
+        justify-content: center;
+    }
+
+    #banner__content__video{
+        margin-top: 240px;
+        margin-right: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 622px;
+        align-items: column;
+    }
+
+    #banner__content__video img{
+        width: 640px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    h1{
+        display: none;
+    }
+    
+    
+    .left-logo{
+        display: none;
+    }
+    
+    .right-logo{
+        display: none;
+    }
+
+    .icon_area__content{
+        background-image: url(./resources/mobile-white-background.png)
+    }
+
+    #icon_area__content-betterdesign div {
+        border-left: none;
+    }
+    
+    .right-icon{
+        border-right: none;
+    }
+
+    #icon_area__content-betterdesign a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    h3{
+        display: none;
+    }
+
+    #yellow-box{
+        height: 30%;
+        background-image: none;
+        background-repeat: no-repeat;
+    }
+
+    .section__layer-banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+
+
+    .date{
+        display: none;
+    }
+    
+   .menu-scroll-wrapper{
+       display: none;
+   }
 }
